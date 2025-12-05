@@ -4,8 +4,8 @@ This project calculates airfare costs based on destination, airline, and passeng
 It includes both the **original assignment code** and a **refactored version** to demonstrate improvement.
 
 ## Features
-- Choose between Hawaii or Bahamas
-- Select airline: US Air or Delta
+- Choose between Hawaii, Bahamas, or Cancun
+- Select airline: US Air, Delta, United
 - Handles adult and child ticket pricing
 - Input validation for passenger counts
 - Refactored version with cleaner functions and reusable logic
@@ -13,6 +13,7 @@ It includes both the **original assignment code** and a **refactored version** t
 ## Project Structure
 AirfareCalculator/ 
 │── older version/ # Original assignment code 
+│── older version 2/ # extended assignment code 
 │── refactored/ # Improved, function-based design
 
 
