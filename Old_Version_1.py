@@ -54,6 +54,9 @@ If numofUnderagePass != 0
 """
 
 #Defining prices
+import sys
+
+
 HawaiiAirFare = 200
 BahamasAirFare = 400
 usAdultAirTicket = 1000

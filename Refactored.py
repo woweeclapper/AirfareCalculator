@@ -3,20 +3,22 @@ import sys
 # Ticket prices stored in dictionaries
 AIRFARES = {
     "Hawaii": 200,
-    "Bahamas": 400
+    "Bahamas": 400,
+    "Cancun": 600
 }
 
 TICKET_PRICES = {
     "US Air": {"adult": 1000, "child": 750},
-    "Delta": {"adult": 1200, "child": 900}
+    "Delta": {"adult": 1200, "child": 900},
+    "United": {"adult": 1500, "child": 1125}
 }
 
 def validate_inputs(place, airline, num_passengers, num_underage):
     if place not in AIRFARES:
-        print("Invalid place. Choose Hawaii or Bahamas.")
+        print("Invalid place. Choose Hawaii, Bahamas, or Cancun.")
         sys.exit()
     if airline not in TICKET_PRICES:
-        print("Invalid airline. Choose US Air or Delta.")
+        print("Invalid airline. Choose US Air, Delta, or United.")
         sys.exit()
     if num_passengers <= 0 or num_passengers > 3:
         print("Invalid number of passengers. Must be between 1 and 3.")
@@ -40,10 +42,10 @@ def calculate_fare(place, airline, num_passengers, num_underage):
 
 def main():
     # Inputs
-    place = input("Vacation destination (Hawaii or Bahamas): ").strip()
+    place = input("Vacation destination (Hawaii, Bahamas, Cancun): ").strip()
     num_passengers = int(input("Number of passengers (1–3): "))
     num_underage = int(input("Number of passengers under 18: "))
-    airline = input("Airline (US Air or Delta): ").strip()
+    airline = input("Airline (US Air, Delta, United): ").strip()
     
     # Validate
     validate_inputs(place, airline, num_passengers, num_underage)
